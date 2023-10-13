@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div
+      class="bg-image"
+      style="
+        background-image: url(/img/pexels-pixabay-209977.jpg);
+        height: 100vh;
+        width: auto;
+      "
+      class="bg-opacity-25"
+    >
+      <header>
+        <nav
+          class="navbar navbar-expand-lg bg-dark border-bottom border-body"
+          data-bs-theme="dark"
+        >
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">HOME</a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#"
+                    >Ranking of the top 10
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Filter</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Shop Bags
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="/home/home.html"
+                        >Go to the main home</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="/details/details.html"
+                        >All Details</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="#">LOG IN</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled" aria-disabled="true"
+                    >Paddel Rackets</a
+                  >
+                </li>
+              </ul>
+              <form class="d-flex" role="search">
+                <input
+                  class="form-control me-2"
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                />
+                <button class="btn btn-outline-success" type="submit">
+                  Search
+                </button>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <main>
+        <form id="form">
+          <div class="mb-3 text-center mt-3">
+            <label
+              for="nameRacket"
+              class="form-label text-black text-center fw-bold fs-2"
+              >RACKET:</label
+            >
+            <input
+              type="text"
+              class="form-control bg-secondary-subtle container col-1 justify-content-center mt-2 mb-2 border border-black border-3"
+              id="nameRacket"
+              aria-describedby="emailHelp"
+              required
+            />
+            <div
+              id="sottotestoNameRacket"
+              class="form-text fw-bold text-black fs-3 mb-3 text-center"
+            >
+              Write on It your dreams racket and we find It for you!
+            </div>
+          </div>
+          <div class="mb-3 text-center">
+            <label
+              for="descriptionRacket"
+              class="form-label fw-bold mt-4 text-black text-center fs-2"
+              >Description:</label
+            >
+            <input
+              type="text"
+              class="form-control container bg-secondary-subtle col-1 justify-content-center mt-2 mb-2 border border-black border-3"
+              id="descriptionRacket"
+              required
+            />
+          </div>
+          <div class="mb-3 text-center">
+            <label
+              for="brandRacket"
+              class="form-label mt-4 text-black text-center fs-2 fw-bold"
+              >Brand:</label
+            >
+            <input
+              type="text"
+              class="form-control bg-secondary-subtle container col-1 justify-content-center mt-2 mb-2 border border-black border-3"
+              id="brandRacket"
+              required
+            />
+          </div>
+          <div class="mb-3 text-center">
+            <label
+              for="imageRacket"
+              class="form-label mt-4 text-black text-center fs-2 fw-bold"
+              >ImageURL:</label
+            >
+            <input
+              type="url"
+              class="form-control container bg-secondary-subtle col-1 justify-content-center mt-2 mb-2 border border-black border-3"
+              id="imageRacket"
+              required
+            />
+          </div>
+          <div class="mb-3 text-center">
+            <label
+              for="priceRacket"
+              class="form-label mt-4 text-center text-black fs-2 fw-bold"
+              >Price $:</label
+            >
+            <input
+              type="number"
+              class="form-control container bg-secondary-subtle col-1 justify-content-center mt-2 mb-4 border border-black border-3"
+              id="priceRacket"
+              required
+            />
+          </div>
+          <div class="d-grid gap-2 col-1 mx-auto my-5 justify-content-center">
+            ><button
+              id="bottone"
+              class="btn btn-dark my-4 justify-content-center text-center border border-white border-3 fw-bold"
+            >
+              <a href="/home/home.html" class="text-decoration-none text-white">
+                SUBMIT</a
+              >
+            </button>
+          </div>
+        </form>
+      </main>
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"
+      ></script>
+      <script src="form.js"></script>
+    </div>
+  </body>
+</html>
